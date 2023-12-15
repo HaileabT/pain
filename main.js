@@ -17,18 +17,38 @@ const observer = new IntersectionObserver(elements => {
     })
     
 })
+let sendnNekaw = 0;
 let x=document.querySelectorAll(".send-btn");
 let y=document.getElementById("nav-bar");
 let z=document.getElementById("main");
 let home=document.getElementById("home");
+const card = document.querySelectorAll(".card1");
 let shity=document.querySelectorAll(".a");
 let home_desc=document.getElementById("home-disp");
 let back=document.getElementById("x");
+const reviewCard = document.querySelectorAll(".review-art");
+
+
+
+
+for(let i =0; i<reviewCard.length; i++){
+    reviewCard[i].onclick = () =>{
+        reviewCard[i].classList.toggle("bigger");
+    }
+}
 for(let i=0;i<x.length;i++)
 {
     x[i].onclick=function(){
-        y.style.top="300px";
-        z.style.top="0px";
+        card.forEach(element => {
+            if (sendnNekaw % 2 == 0)
+            {
+                element.style.transform = "scaleX(2)";
+            }
+            else{
+                element.style.transform = "scaleX(1)";
+            }
+        })
+        sendnNekaw++;
     }
 }
 for(let i = 0; i< links.length; i++){
