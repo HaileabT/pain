@@ -1,0 +1,119 @@
+.page-main{
+    padding: 70px 0;
+    background-color: black;
+    color: white;
+}
+.form-element:nth-of-type(1), .form-element:nth-of-type(2){
+    padding-top: 20px;
+    height: 15px;
+}
+
+.form-element{
+    width: 100%;
+    padding: 5px;
+    background-color: green;
+    border: solid red;
+}
+
+textarea{
+    height: 150px;
+    resize: none;
+}
+
+.dont-contact-us{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.some-random-message{
+    padding: 20px;
+    height: 80vh;
+    z-index: 1000;
+    overflow: hidden;
+    display: none;
+    place-items: center;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    animation: float-anim 3.5s infinite linear;
+}
+
+@keyframes float-anim{
+    0%{
+        top: 50%;
+    }
+    25%{
+        top: 45%;
+    }
+    75%{
+        top: 55%;
+    }
+    100%{
+        top: 50%;
+    }
+}
+.some-random-message h2{
+    color: white;
+}
+
+.some-random-message span{
+    position: absolute;
+    top: 10px;
+    color: white;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dont-contact-us{
+    background-color: blue;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.dont-form fieldset{
+    display: grid;
+    row-gap: 5px;
+}
+
+.form-label{
+    margin-top: 20px;
+}
+
+.lifa-bilh-new{
+    position: absolute;
+    animation: wodya-wodih 8s infinite linear;
+    background-color: pink;
+    border: solid red;
+    padding: 5px 20px;
+}
+
+@keyframes wodya-wodih{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+.some-random-message img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 100%;
+    z-index: -1;
+}
