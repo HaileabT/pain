@@ -65,6 +65,7 @@ textarea{
     position: absolute;
     top: 10px;
     color: white;
+    border: solid red;
     right: 10px;
     font-size: 30px;
     font-weight: bold;
@@ -135,7 +136,4 @@ textarea{
     100%{
         transform: translateX(0);
     }
-}
-.page-div{
-    height: 500vh;
 }
