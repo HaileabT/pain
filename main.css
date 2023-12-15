@@ -1,9 +1,113 @@
 .page-main{
+    /* top:300px; */
     position: relative;
     padding: 70px 0;
     background-color: black;
     color: white;
+ 
 }
+.card-container{
+
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 2fr;
+   gap: 20px;
+   background-color: goldenrod;
+   
+}
+.card1{
+   background: url(/pain/image/Results\ for\ quiz\ pick\ song\ lyrics\ to\ get\ a\ sad\ cat.jpg);
+    margin-left: 50px;
+    background-color: crimson;
+    width: 300px;
+    border-width: 30px;
+    border-color: #8a2be2;
+    border-radius: 50px 0 20px 10px;
+    text-align: center;
+    overflow: hidden;
+    animation: card 3s cubic-bezier(0.86, 0, 0.07, 1) infinite;   
+}
+
+
+.image{
+    background-color: deepskyblue;
+}
+.title{
+
+    text-align: center;
+    color: blue;
+    font-size: 50px;
+}
+.disc-out{
+    background-color: indigo;
+    color: yellow;
+   
+}
+
+
+.send-btn{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50px;
+    width: 70%;
+    color:rgb(198, 205, 0)
+}
+.home-disp{
+    top:0;
+    z-index: 1000;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(233, 33, 33);
+    display: none;
+  
+}
+   
+.home-text{
+  position: fixed;
+    margin-left: 30%;
+    margin-to: 49%;
+    color:cyan;
+    font-size: 50px;
+   text-align: center;
+}
+.x{
+    position: absolute;
+    color:white;
+    font-size: 30px;
+    top:2px;
+    right: 50px;
+    cursor: pointer;
+    animation: aastu 10s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+    transition: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+@keyframes aastu{
+    0%{
+        
+
+        
+        transform:translateX(-300px);
+    }
+    25%{
+    
+        transform:translatey(300px);
+    }
+    50%{
+    
+        transform:translateX(-100px);
+    }
+    75%{
+  
+        transform:translatey(400px);
+    }
+    100%{
+
+        transform:translateX(-200px);
+    }
+}
+
+
 .form-element:nth-of-type(1), .form-element:nth-of-type(2){
     padding-top: 20px;
     height: 15px;
