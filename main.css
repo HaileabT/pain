@@ -227,7 +227,7 @@ textarea{
 .come{
     opacity: 100%;
     transition: 1s linear;
-    animation: too-excited-elements 20s 1 linear !important;
+    animation: too-excited-elements 3s 1 linear !important;
 }
 
 @keyframes too-excited-elements{
@@ -239,5 +239,65 @@ textarea{
     }
     100%{
         transform: translateX(0);
+    }
+}
+
+
+.reviews-container{
+    display: grid;
+    width: 70%;
+    margin: 70px auto;
+    row-gap: 10px;
+}
+
+.review-art{
+    border: solid rgb(255, 0, 183);
+    background-image: linear-gradient(blue, green);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.review-art.bigger{
+    position: absolute;
+    width: 30%;
+    height: 40vh;
+}
+
+.review-art:hover{
+    transform: scale(2.1);
+}
+.review-title{
+    text-align: center;
+    font-size: 2.1rem;
+}
+
+
+.random-stuff{
+    position: fixed;
+    width: 100px;
+    height: 600px;
+    background-color: white;
+    z-index: 10000;
+    animation: epilepsy 0.05s infinite linear;
+}
+@keyframes epilepsy{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 1500px;
+
+    }
+}
+
+html{
+    animation: bright 1s infinite linear; 
+}
+@keyframes bright{
+    0%{
+        filter: brightness(0.3);
+    }
+    100%{
+        filter: brightness(1);
     }
 }
