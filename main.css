@@ -119,7 +119,201 @@ margin-top:300px;
     background-color: green;
     border: solid red;
 }
+.more-pain {
+    background: lime;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    line-height: 2;
+    text-align: center;
+    margin: 0;
+    min-height: 500px;
+    animation: rotateText 2s infinite linear;
+}
 
+.ugly-box h1 {
+   
+    color: magenta;
+            text-decoration: underline;
+            animation: shake 0.5s infinite alternate;
+}
+
+.ugly-box p {
+    transform: rotate(45deg);
+    font-size: 24px;
+    color: purple;
+  
+   animation: colorChange 30s infinite alternate;
+}
+
+
+ .ugly-box {
+        background: cyan;
+        border: 10px solid orange;
+        padding: 20px;
+        margin: 30px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 5px #888888;
+        animation: boxRotate 2s  linear;
+    }
+
+.annoying-link {
+    color: red;
+    text-decoration: blink;
+}
+
+.rotate-text {
+    
+    transform: rotate(45deg);
+    transform: rotate(-45deg);
+  transition: 2s;
+    font-size: 24px;
+    color: purple;
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(5px); }
+}
+
+@keyframes colorChange {
+    0% { color: yellow; }
+    100% { color: pink; }
+}
+
+@keyframes boxRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes rotateText {
+    0% { transform: rotate(45deg); }
+    100% { transform: rotate(-45deg); }
+}
+.cancer-head {
+    background: #ff00ff;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    line-height: 2;
+    text-align: center;
+    margin: 0;
+    min-height: 1000px;
+    overflow: hidden;
+}
+
+.header-section {
+    color: #00ff00;
+    text-decoration: underline;
+   
+}
+
+.main-text-section {
+    color: #ffff00;
+    font-size: 20px;
+    animation: colorChange 2s infinite alternate;
+}
+
+.ugly-box-section {
+    background: #ffcc00;
+    border: 10px solid #ff0000;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #888888;
+    animation: boxRotate 2s infinite linear;
+}
+
+.annoying-link {
+    color: #ff0000;
+    text-decoration: blink;
+    cursor: pointer;
+}
+
+.rotate-text-section {
+    transform: rotate(45deg);
+    font-size: 24px;
+    color: #800080;
+    animation: rotateText 2s infinite linear;
+}
+
+.ugly-container-section {
+    background: #008080;
+    padding: 50px;
+    margin-top: 50px;
+    /* animation: backgroundColorChange 3s infinite alternate; */
+    cursor: pointer;
+}
+
+.ugly-box2-section {
+    background: #800000;
+    border: 5px dashed #0000ff;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    /* animation: boxRotate 2s infinite linear; */
+}
+.cancer-head:hover{
+    background: red;
+    color:blue; 
+}
+.ugly-button {
+    background-color: #ffcc00;
+    color: #ff0000;
+    border: 2px solid #00ff00;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.ugly-button:hover {
+    background-color: #800080;
+    color: #ffff00;
+    width: 900px;
+    animation: shake 2s linear infinite;
+}
+
+.even-uglier-button {
+    background-color: #008080;
+    color: #800000;
+    border: 2px dotted #0000ff;
+    padding: 15px 25px;
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.even-uglier-button:hover {
+    background-color: #ff1493;
+    color: #00ff00;
+    width: 700px;
+    height: 80px;
+    animation: box-rotate 2s linear infinite;
+}
+
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(5px); }
+}
+
+@keyframes colorChange {
+    0% { color: #ffff00; }
+    100% { color: #ff1493; }
+}
+
+@keyframes boxRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes rotateText {
+    0% { transform: rotate(45deg); }
+    100% { transform: rotate(-45deg); }
+}
+
+@keyframes backgroundColorChange {
+    0% { background: #008080; }
+    100% { background: #800080; }
+}
 textarea{
     height: 150px;
     resize: none;

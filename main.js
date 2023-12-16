@@ -24,8 +24,11 @@ let z=document.getElementById("main");
 let home=document.getElementById("home");
 const card = document.querySelectorAll(".card1");
 let shity=document.querySelectorAll(".a");
+let box=document.querySelectorAll(".click");
+let desc=document.getElementById("disp");
 let home_desc=document.getElementById("home-disp");
 let back=document.getElementById("x");
+let pre=document.getElementById("y");
 const reviewCard = document.querySelectorAll(".review-art");
 
 
@@ -67,11 +70,42 @@ for(let i=0;i<shity.length;i++)
     })
 }
 
+pre.onclick=function(){
+    home_desc.style.display="none";
+}
+for(let i=0;i<box.length;i++)
+{
+    box[i].addEventListener("click", (event)=>{
+        event.preventDefault();
+        desc.style.display="block";
+    })
+}
+
+pre.onclick=function(){
+    desc.style.display="none";
+}
+for(let i=0;i<shity.length;i++)
+{
+    shity[i].addEventListener("click", (event)=>{
+        event.preventDefault();
+        desc.style.display="block";
+    })
+}
+
 back.onclick=function(){
     home_desc.style.display="none";
 }
+for(let i=0;i<shity.length;i++)
+{
+    shity[i].addEventListener("click", (event)=>{
+        event.preventDefault();
+        home_desc.style.display="block";
+    })
+}
 
-
+back.onclick=function(){
+    home_desc.style.display="none";
+}
 notInRange.forEach((element) => observer.observe(element));
 
 notInRange.forEach((element) =>{
